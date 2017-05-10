@@ -1,0 +1,12 @@
+{
+  "name": "yaml-based-form-builder",
+  "type": "project",
+  "require": {
+    "php": ">=5.5.9"
+  },
+  "autoload": {
+    "psr-0": {
+      "": "src/"
+    }
+  }
+}

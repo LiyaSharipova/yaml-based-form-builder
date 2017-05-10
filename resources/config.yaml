@@ -1,0 +1,38 @@
+form1 :
+    action : /product/get
+    method : GET
+    _elements :
+        input : # -- это название тега, который может быть внутри <form>
+            id : value
+            type : text
+            maxlength : 20
+            value : Blue
+            _prefix: Введите значение
+        button :
+            type : button
+            value : Press
+            name : super-button
+form2 :
+    action : /product/add
+    method : POST
+    _elements :
+        input :
+            type : text
+            name : input1
+        button :
+            type : button
+            value : Press
+            name : super-button
+#        select :
+#            option :
+#                value : value1
+#                _text : value1text
+#            option :
+#                value : value2
+#                _text : value2text
+#            option :
+#                value : value3
+#                _text : value3text
+        label :
+            for : male
+            _text : maletext
