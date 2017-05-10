@@ -1,38 +1,70 @@
-form1 :
+form-111 :
     action : /product/get
     method : GET
     _elements :
-        input : # -- это название тега, который может быть внутри <form>
-            id : value
+        input-12 : # -- это название тега, который может быть внутри <form>
+            id : 1
             type : text
             maxlength : 20
-            value : Blue
+            value : Type here
             _prefix: Введите значение
-        button :
+        label-12 :
+            for : 1
+            _text : text-of-label
+        input-123 :
+            id : 2
+            type : email
+            maxlength : 30
+            value : Your email
+            _prefix: Введите свой почтовый ящик
+        input-12323 :
+            id : 3
+            type : radio
+            maxlength : 30
+            value: This value
+            _prefix: This radio
+        textarea-12 :
+            rows : 4
+            cols : 50
+            name : my-textarea
+            _text : Text in textarea
+        button-12313 :
             type : button
-            value : Press
+            value : value-of-button
             name : super-button
-form2 :
+            _text : Press me
+form-1121 :
     action : /product/add
     method : POST
     _elements :
-        input :
+        input-112 : # -- это название тега, который может быть внутри <form>
+            id : 1
             type : text
-            name : input1
-        button :
+            maxlength : 20
+            value : Type here
+            _prefix: Введите значение
+        label-12123 :
+            for : 1
+            _text : text-of-label
+        input-1212313 :
+            id : 2
+            type : email
+            maxlength : 30
+            value : Your email
+            _prefix: Введите свой почтовый ящик
+        input-12312321323 :
+            id : 3
+            type : radio
+            maxlength : 30
+            value: This value
+            _prefix: This radio
+        textarea-11232 :
+            rows : 4
+            cols : 50
+            name : my-textarea
+            _text : Text in textarea
+        button-12312313 :
             type : button
-            value : Press
+            value : value-of-button
             name : super-button
-#        select :
-#            option :
-#                value : value1
-#                _text : value1text
-#            option :
-#                value : value2
-#                _text : value2text
-#            option :
-#                value : value3
-#                _text : value3text
-        label :
-            for : male
-            _text : maletext
+            _text : Press me

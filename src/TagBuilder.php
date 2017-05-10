@@ -20,12 +20,13 @@ class TagBuilder
     public function build(): String
     {
         $buffer = '';
-        if (!empty($this->prefix)) $buffer = $buffer . $this->prefix. ' ';
+        if (!empty($this->prefix)) $buffer = $buffer . $this->prefix . ' ';
         $buffer = $buffer . '<' . $this->tagName;
         if (!empty($this->attributes)) $buffer = $buffer . $this->attributes;
         if (!empty($this->text)) {
             $buffer = $buffer . '>';
-            $buffer = $buffer . '</br>';
+            if ($this->tagName != 'textarea')
+                $buffer = $buffer . '</br>';
             $buffer = $buffer . $this->text;
             $buffer = $buffer . '</' . $this->tagName . '>';
         } else {
