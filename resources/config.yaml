@@ -38,7 +38,7 @@ form-1121 :
     method : POST
     _elements :
         input-112 : # -- это название тега, который может быть внутри <form>
-            id : 1
+            id : 11
             type : text
             maxlength : 20
             value : Type here
@@ -47,13 +47,13 @@ form-1121 :
             for : 1
             _text : text-of-label
         input-1212313 :
-            id : 2
+            id : 22
             type : email
             maxlength : 30
             value : Your email
             _prefix: Введите свой почтовый ящик
         input-12312321323 :
-            id : 3
+            id : 33
             type : radio
             maxlength : 30
             value: This value

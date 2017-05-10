@@ -55,4 +55,4 @@ foreach ($yaml_parsed as $form_name => $form) {
     $builtForm = $builtForm . $formBuilder->build();
 }
 
-echo '<html><body>' . $builtForm . '</body></html>';
+file_put_contents('output_form.html', '<html><header><meta charset="UTF-8"/></header><body>' . $builtForm . '</body></html>');
